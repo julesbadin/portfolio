@@ -3,10 +3,12 @@
 
 body,
 * {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #000;
   margin: 0;
-  padding: 0
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -14,33 +16,53 @@ h1 {
   font-weight: bolder;
 }
 
+section {
+  min-height: 100vh;
+  border-bottom: 1px solid tomato;
+}
+
+footer {
+  height: 60vh;
+  background-color: darkslategray;
+}
+
 /* NAVIGATION */
 /* ---------- */
 
 nav {
   height: 10vh;
-  background-color: chartreuse;
   display: flex;
   align-items: center;
-  padding-left: 15%
+  padding-left: 15%;
 }
 
 li {
   display: inline-block;
-  color: #FFF;
+  color: #fff;
   padding-right: 50px;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* HERO SECTION */
 /* ------------ */
 
 header {
+  color: #fff;
   width: 100vw;
   height: 100vh;
   background-color: tomato;
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 50%), url(); */
-  ;
-  position: relative
+  /* background-image: linear-gradient(
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.2) 50%
+    ),
+    url(../images/hero-scene2.jpg); */
+  background-image: url(../images/hero-scene2.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
 .left-paddle-block {
@@ -48,8 +70,29 @@ header {
   top: 0;
   left: 0;
   height: 100vh;
-  width: 5%;
-  background-color: teal;
+  width: 7vw;
+  /* background-color: chartreuse; */
+  border-right: 1px solid silver;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 3vh 0;
+  /* letter-spacing: -7px; */
+}
+
+.disclaimer {
+}
+
+.language-switch {
+  font-size: 15px;
+  font-weight: bolder;
+  position: absolute;
+  bottom: 3vh;
+  text-align: center;
+  margin: 3vh 0;
 }
 
 .hero-texts {
@@ -57,7 +100,7 @@ header {
   align-items: center;
   height: 90vh;
   width: 50%;
-  margin-left: 15%
+  margin-left: 15%;
 }
 
 .big-hr {
@@ -66,5 +109,4 @@ header {
   background-color: #fff;
   text-align: left;
   margin: 15px 0 30px;
-
 }
