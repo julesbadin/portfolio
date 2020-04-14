@@ -1,0 +1,88 @@
+/* HERO SECTION */
+/* ------------ */
+
+header {
+  color: aliceblue;
+  width: 100vw;
+  height: 100vh;
+  background-color: tomato;
+  /* background-image: linear-gradient(
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.2) 50%
+    ),
+    url(../images/hero-scene2.jpg); */
+  background-image: url(../../images/hero-scene3bis.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.left-paddle-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 7vw;
+  /* border-right: 1px solid silver; */
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 3vh 0;
+  /* letter-spacing: -7px; */
+}
+
+.disclaimer {
+  position: relative;
+  height: 80vh;
+}
+
+.vertical {
+  writing-mode: vertical-rl;
+  margin: 0 auto;
+  padding-top: 30vh;
+}
+
+.language-switch {
+  font-size: 15px;
+  font-weight: bolder;
+  position: absolute;
+  bottom: 3vh;
+  display: flex;
+  justify-content: center;
+  width: 7vw;
+}
+
+.hero-texts {
+  display: flex;
+  align-items: center;
+  height: 90vh;
+  width: 50%;
+  margin-left: 15%;
+}
+
+.social-media {
+  position: fixed;
+  top: 40vh;
+  right: 1vw;
+  height: 90vh;
+}
+
+.social-media>ul {
+  list-style: none;
+}
+
+.social-media>ul>li {
+  padding: 10px 0
+}
+
+.big-hr {
+  width: 150px;
+  height: 5px;
+  background-color: #fff;
+  text-align: left;
+  margin: 15px 0 30px;
+}

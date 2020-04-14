@@ -1,0 +1,14 @@
+#about {
+  position: relative;
+}
+
+#about div:first-child,
+#about div:last-child {
+  width: 30%;
+  padding: 10%;
+
+}
+
+#about div:first-child {
+  background-color: #fff;
+}

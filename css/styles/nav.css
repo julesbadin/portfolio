@@ -1,0 +1,20 @@
+/* NAVIGATION */
+/* ---------- */
+
+nav {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  padding-left: 15%;
+}
+
+nav>ul>li {
+  display: inline-block;
+  color: #fff;
+  padding-right: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
